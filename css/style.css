@@ -1,0 +1,94 @@
+
+ @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+
+/* common styles */
+  
+  .add-bar{
+    width: 40rem;
+}
+
+ul{
+    border:1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+}
+ li{
+     padding:2rem 6rem;
+     border: 1px solid rgb(226, 226, 226);
+     border-right: none;
+     border-left: none;
+    border-top: none;
+ }
+
+ li:last-child{
+     border-bottom: none;
+ }
+
+
+  
+  /* container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+ 
+  
+  .class-input {
+    width: 520px;
+    height: 48.6px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    color: rgb(123, 121, 121);
+    margin-top: -70px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .add-button {
+    background-color: #363636;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 16px;
+    margin-left: -15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+  }
+  
+  /* class-form style ends */
+  
+  /* class-items */
+  .class-items {
+    min-width: 950px;
+    margin-top: 70px;
+  }
+  
+  /* each li with class="item" */
+  .item {
+   
+    padding: 30px;
+    font-size: 1.1rem;
+  }
+  
+  
+  
+  .delete-button {
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+  
+  
+  /* todo-items style ends */
+  
+  /* container style ends */

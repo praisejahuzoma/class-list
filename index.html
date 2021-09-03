@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Class-registration-list-app</title>
+    <script src="https://use.fontawesome.com/4837e55cbb.js"></script>
+</head>
+<body>
+   <!-- Main App container  -->
+    <div class="container">
+       <div class="container" >
+     <h1 class="title is-3 has-text-centered mt-6">Class Registration List</h1>
+      <!-- Class registration List search bar  -->
+         <div class="columns is-flex">
+          <div class="column is-flex is-justify-content-center">
+            <div class="field has-addons">
+              <div class="control">
+                 <a class="button is-dark">
+                  <i class="fa fa-search"></i>
+                 </a>
+              </div>
+               <div class="control">
+                <input class="input" type="text" placeholder="Find a repository" id="myInput" onkeyup="myFunction()">
+               </div>
+            </div>
+         </div>
+       </div> 
+      <!--End of class registration List search bar -->
+      
+       <!-- class registration list add bar -->
+        <hr>
+       <form class="class-form">
+          <input class="class-input" type="text" placeholder="Find a repository">
+         <button type="submit" class="add-button">Add Class List</button>
+       </form>
+      <!-- end of class registration list add bar -->
+     
+  
+      <ul class="class-items" >
+        <!-- dummy item -->
+        <li class="item" data-key="1594003133171">
+        <span class="delete-button">x</span>
+       
+          <!-- <span class="delete-button "> 
+            <i class="fa fa-edit" id="icon"></i>
+          </span> -->
+         
+        </li>
+      </ul>
+      <ul id="myUL" >
+        <li><a>vgdtrh</a></li>
+        <li><a>bvdttr fg </a></li>
+      </ul>
+    
+    </div>
+    
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+      
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+</body>
+</html>
